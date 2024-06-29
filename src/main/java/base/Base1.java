@@ -19,6 +19,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
@@ -35,7 +36,7 @@ public class Base1 {
 	
 	@Parameters("choosebrowser")
 	@BeforeMethod
-	public void LanchBrowser(ITestContext context, @Optional("chrome") String choosebrowser) {
+	public void LanchBrowser(@Optional("chrome") String choosebrowser) {
 		// Launch the browser// Launch the browser
 		switch (choosebrowser.toLowerCase()){
 		case "chrome":
@@ -53,16 +54,16 @@ public class Base1 {
 		}
 		  driver.manage().window().maximize();
 		  driver.get("https://www.spicejet.com/");
-	      
-	}
+	      }
 	
-	@AfterMethod
-	
+	@BeforeTest
 	public void createText(ITestContext context) {
 		
 		extentTest = extentReports.createTest(context.getName());
 		
 	}
+	
+	@AfterMethod
 	
 	public void checkStatus(Method m, ITestResult result) {
 		if(result.getStatus() == ITestResult.FAILURE) {
