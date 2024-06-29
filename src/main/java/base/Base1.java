@@ -2,7 +2,6 @@ package base;
 
 
 
-import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
@@ -20,7 +19,6 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
@@ -110,7 +108,6 @@ public class Base1 {
 	public void GenerateExtentReports() throws Exception {
 		
 	    extentReports.flush();
-		//Desktop.getDesktop().browse(new File("AllTest.html").toURI());
 	}
 
 }
