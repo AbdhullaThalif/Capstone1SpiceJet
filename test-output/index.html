@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\ELCOT\eclipse-workspace\Capstone1\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">8 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="SpiceJetTest.LoginPageTest" class="method navigator-link" hash-for-method="LoginTest">LoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="SpiceJetTest.LoginWithInvalidCredentialTest" class="method navigator-link" hash-for-method="LoginWithInvalidCredentialTst">LoginWithInvalidCredentialTst</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="SpiceJetTest.OneWayTripTest" class="method navigator-link" hash-for-method="OneWayTest">OneWayTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="SpiceJetTest.RoundTripTest" class="method navigator-link" hash-for-method="RoundTripTest1">RoundTripTest1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="SpiceJetTest.SelectFlightAndPassengerInfoOneWayTripTest" class="method navigator-link" hash-for-method="SelectFlightAndPassengerInfoOneWayTripTt">SelectFlightAndPassengerInfoOneWayTripTt</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="SpiceJetTest.SelectFlightAndPassengerInfoRoundTripTest" class="method navigator-link" hash-for-method="SelectFlightAndPassengerInfoRoundTripTst">SelectFlightAndPassengerInfoRoundTripTst</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="SpiceJetTest.SignupPageTest" class="method navigator-link" hash-for-method="SignupTest">SignupTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="SpiceJetTest.ValidateBookingPageFieldsTest" class="method navigator-link" hash-for-method="ValidateBookingPageFieldsTst">ValidateBookingPageFieldsTst</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">SpiceJetTest.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginTest">
+                  </a> <!-- LoginTest -->
+                  <span class="method-name">LoginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">SpiceJetTest.ValidateBookingPageFieldsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidateBookingPageFieldsTst">
+                  </a> <!-- ValidateBookingPageFieldsTst -->
+                  <span class="method-name">ValidateBookingPageFieldsTst</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">SpiceJetTest.RoundTripTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="RoundTripTest1">
+                  </a> <!-- RoundTripTest1 -->
+                  <span class="method-name">RoundTripTest1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">SpiceJetTest.SelectFlightAndPassengerInfoOneWayTripTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SelectFlightAndPassengerInfoOneWayTripTt">
+                  </a> <!-- SelectFlightAndPassengerInfoOneWayTripTt -->
+                  <span class="method-name">SelectFlightAndPassengerInfoOneWayTripTt</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">SpiceJetTest.OneWayTripTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="OneWayTest">
+                  </a> <!-- OneWayTest -->
+                  <span class="method-name">OneWayTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">SpiceJetTest.SelectFlightAndPassengerInfoRoundTripTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SelectFlightAndPassengerInfoRoundTripTst">
+                  </a> <!-- SelectFlightAndPassengerInfoRoundTripTst -->
+                  <span class="method-name">SelectFlightAndPassengerInfoRoundTripTst</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">SpiceJetTest.LoginWithInvalidCredentialTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginWithInvalidCredentialTst">
+                  </a> <!-- LoginWithInvalidCredentialTst -->
+                  <span class="method-name">LoginWithInvalidCredentialTst</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">SpiceJetTest.SignupPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SignupTest">
+                  </a> <!-- SignupTest -->
+                  <span class="method-name">SignupTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\ELCOT\eclipse-workspace\Capstone1\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Signup&quot;&gt;
+    &lt;parameter name=&quot;choosebrowser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;SpiceJetTest.SignupPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Signup --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Login with Valid&quot;&gt;
+    &lt;parameter name=&quot;choosebrowser&quot; value=&quot;Edge&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;SpiceJetTest.LoginPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login with Valid --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Login With Invalid Credential&quot;&gt;
+    &lt;parameter name=&quot;choosebrowser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;SpiceJetTest.LoginWithInvalidCredentialTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login With Invalid Credential --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;One Way Trip&quot;&gt;
+    &lt;parameter name=&quot;choosebrowser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;SpiceJetTest.OneWayTripTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- One Way Trip --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Round Trip&quot;&gt;
+    &lt;parameter name=&quot;choosebrowser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;SpiceJetTest.RoundTripTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Round Trip --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Select Flight And Passenger Info OneWay Trip&quot;&gt;
+    &lt;parameter name=&quot;choosebrowser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;SpiceJetTest.SelectFlightAndPassengerInfoOneWayTripTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Select Flight And Passenger Info OneWay Trip --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Select Flight And Passenger Info Round Trip&quot;&gt;
+    &lt;parameter name=&quot;choosebrowser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;SpiceJetTest.SelectFlightAndPassengerInfoRoundTripTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Select Flight And Passenger Info Round Trip --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Validate Booking Page Fields&quot;&gt;
+    &lt;parameter name=&quot;choosebrowser&quot; value=&quot;edge&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;SpiceJetTest.ValidateBookingPageFieldsTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Validate Booking Page Fields --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Signup (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Login with Valid (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Login With Invalid Credential (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">One Way Trip (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Round Trip (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Select Flight And Passenger Info OneWay Trip (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Select Flight And Passenger Info Round Trip (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Validate Booking Page Fields (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'SelectFlightAndPassengerInfoOneWayTripTt')
+data.setCell(0, 2, 'SpiceJetTest.SelectFlightAndPassengerInfoOneWayTripTest')
+data.setCell(0, 3, 46943);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'SelectFlightAndPassengerInfoRoundTripTst')
+data.setCell(1, 2, 'SpiceJetTest.SelectFlightAndPassengerInfoRoundTripTest')
+data.setCell(1, 3, 45600);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'SignupTest')
+data.setCell(2, 2, 'SpiceJetTest.SignupPageTest')
+data.setCell(2, 3, 27182);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'RoundTripTest1')
+data.setCell(3, 2, 'SpiceJetTest.RoundTripTest')
+data.setCell(3, 3, 22675);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'OneWayTest')
+data.setCell(4, 2, 'SpiceJetTest.OneWayTripTest')
+data.setCell(4, 3, 20854);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'LoginTest')
+data.setCell(5, 2, 'SpiceJetTest.LoginPageTest')
+data.setCell(5, 3, 14639);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'LoginWithInvalidCredentialTst')
+data.setCell(6, 2, 'SpiceJetTest.LoginWithInvalidCredentialTest')
+data.setCell(6, 3, 6684);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'ValidateBookingPageFieldsTst')
+data.setCell(7, 2, 'SpiceJetTest.ValidateBookingPageFieldsTest')
+data.setCell(7, 3, 3274);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">SpiceJetTest.ValidateBookingPageFieldsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">ExtentReports</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SpiceJetTest.SignupPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">LanchBrowser(org.testng.TestRunner@6f012914, chrome)</span>
+                <span class="method-start">1439 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SignupTest</span>
+                <span class="method-start">30404 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createText(org.testng.TestRunner@6f012914)</span>
+                <span class="method-start">57593 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">57674 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SpiceJetTest.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">LanchBrowser(org.testng.TestRunner@250b236d, Edge)</span>
+                <span class="method-start">60806 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LoginTest</span>
+                <span class="method-start">102230 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createText(org.testng.TestRunner@250b236d)</span>
+                <span class="method-start">116890 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">116919 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SpiceJetTest.LoginWithInvalidCredentialTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">LanchBrowser(org.testng.TestRunner@6a0ac48e, chrome)</span>
+                <span class="method-start">124864 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LoginWithInvalidCredentialTst</span>
+                <span class="method-start">166308 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createText(org.testng.TestRunner@6a0ac48e)</span>
+                <span class="method-start">172998 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">173050 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SpiceJetTest.OneWayTripTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">LanchBrowser(org.testng.TestRunner@499683c4, chrome)</span>
+                <span class="method-start">175633 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">OneWayTest</span>
+                <span class="method-start">205494 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createText(org.testng.TestRunner@499683c4)</span>
+                <span class="method-start">226358 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">226391 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SpiceJetTest.RoundTripTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">LanchBrowser(org.testng.TestRunner@10bea4, chrome)</span>
+                <span class="method-start">229454 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">RoundTripTest1</span>
+                <span class="method-start">256155 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createText(org.testng.TestRunner@10bea4)</span>
+                <span class="method-start">278843 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">278931 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SpiceJetTest.SelectFlightAndPassengerInfoOneWayTripTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">LanchBrowser(org.testng.TestRunner@2b960a7, chrome)</span>
+                <span class="method-start">282642 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SelectFlightAndPassengerInfoOneWayTripTt</span>
+                <span class="method-start">312905 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createText(org.testng.TestRunner@2b960a7)</span>
+                <span class="method-start">359858 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">359879 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SpiceJetTest.SelectFlightAndPassengerInfoRoundTripTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">LanchBrowser(org.testng.TestRunner@1e95b653, chrome)</span>
+                <span class="method-start">362194 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SelectFlightAndPassengerInfoRoundTripTst</span>
+                <span class="method-start">398241 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createText(org.testng.TestRunner@1e95b653)</span>
+                <span class="method-start">443843 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">443853 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SpiceJetTest.ValidateBookingPageFieldsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">LanchBrowser(org.testng.TestRunner@43471a7e, edge)</span>
+                <span class="method-start">446740 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ValidateBookingPageFieldsTst</span>
+                <span class="method-start">490750 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">createText(org.testng.TestRunner@43471a7e)</span>
+                <span class="method-start">494052 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">494118 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">GenerateExtentReports</span>
+                <span class="method-start">498310 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
