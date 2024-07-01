@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">8 methods, 2 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="SpiceJetTest.LoginPageTest" class="method navigator-link" hash-for-method="LoginTest">LoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="SpiceJetTest.SelectFlightAndPassengerInfoOneWayTripTest" class="method navigator-link" hash-for-method="SelectFlightAndPassengerInfoOneWayTripTt">SelectFlightAndPassengerInfoOneWayTripTt</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,11 +121,6 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="SpiceJetTest.LoginPageTest" class="method navigator-link" hash-for-method="LoginTest">LoginTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="SpiceJetTest.LoginWithInvalidCredentialTest" class="method navigator-link" hash-for-method="LoginWithInvalidCredentialTst">LoginWithInvalidCredentialTst</a> <!-- method navigator-link -->
@@ -120,11 +134,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="SpiceJetTest.RoundTripTest" class="method navigator-link" hash-for-method="RoundTripTest1">RoundTripTest1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="SpiceJetTest.SelectFlightAndPassengerInfoOneWayTripTest" class="method navigator-link" hash-for-method="SelectFlightAndPassengerInfoOneWayTripTt">SelectFlightAndPassengerInfoOneWayTripTt</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -154,9 +163,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">SpiceJetTest.LoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -165,6 +174,107 @@
                   <a name="LoginTest">
                   </a> <!-- LoginTest -->
                   <span class="method-name">LoginTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Login&apos;)]&quot;}
+  (Session info: MicrosoftEdge=126.0.2592.81)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f785326b658245679d63b33f627332b8, findElement {value=//div[contains(text(),&apos;Login&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 126.0.2592.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52695}, msedge: {msedgedriverVersion: 126.0.2592.81 (38151611195b..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52695/devtoo..., se:cdpVersion: 126.0.2592.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f785326b658245679d63b33f627332b8
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+	at SpiceJet.LoginPage.Login(LoginPage.java:32)
+	at SpiceJetTest.LoginPageTest.LoginTest(LoginPageTest.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">SpiceJetTest.SelectFlightAndPassengerInfoOneWayTripTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SelectFlightAndPassengerInfoOneWayTripTt">
+                  </a> <!-- SelectFlightAndPassengerInfoOneWayTripTt -->
+                  <span class="method-name">SelectFlightAndPassengerInfoOneWayTripTt</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//*[name()=&apos;rect&apos;])[2]&quot;}
+  (Session info: chrome=124.0.6367.210)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a1c82609543d64fa45ca83139d51254a, findElement {value=(//*[name()=&apos;rect&apos;])[2], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.210, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53250}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53250/devtoo..., se:cdpVersion: 124.0.6367.210, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a1c82609543d64fa45ca83139d51254a
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+	at SpiceJet.SelectFlightAndPassengerInfoOneWayTrip.SearchFlight(SelectFlightAndPassengerInfoOneWayTrip.java:123)
+	at SpiceJetTest.SelectFlightAndPassengerInfoOneWayTripTest.SelectFlightAndPassengerInfoOneWayTripTt(SelectFlightAndPassengerInfoOneWayTripTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">SpiceJetTest.OneWayTripTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="OneWayTest">
+                  </a> <!-- OneWayTest -->
+                  <span class="method-name">OneWayTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">SpiceJetTest.SelectFlightAndPassengerInfoRoundTripTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SelectFlightAndPassengerInfoRoundTripTst">
+                  </a> <!-- SelectFlightAndPassengerInfoRoundTripTst -->
+                  <span class="method-name">SelectFlightAndPassengerInfoRoundTripTst</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -195,51 +305,6 @@
                   <a name="RoundTripTest1">
                   </a> <!-- RoundTripTest1 -->
                   <span class="method-name">RoundTripTest1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">SpiceJetTest.SelectFlightAndPassengerInfoOneWayTripTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="SelectFlightAndPassengerInfoOneWayTripTt">
-                  </a> <!-- SelectFlightAndPassengerInfoOneWayTripTt -->
-                  <span class="method-name">SelectFlightAndPassengerInfoOneWayTripTt</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">SpiceJetTest.OneWayTripTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="OneWayTest">
-                  </a> <!-- OneWayTest -->
-                  <span class="method-name">OneWayTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">SpiceJetTest.SelectFlightAndPassengerInfoRoundTripTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="SelectFlightAndPassengerInfoRoundTripTst">
-                  </a> <!-- SelectFlightAndPassengerInfoRoundTripTst -->
-                  <span class="method-name">SelectFlightAndPassengerInfoRoundTripTst</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -392,42 +457,42 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'SelectFlightAndPassengerInfoOneWayTripTt')
-data.setCell(0, 2, 'SpiceJetTest.SelectFlightAndPassengerInfoOneWayTripTest')
-data.setCell(0, 3, 46943);
+data.setCell(0, 1, 'SignupTest')
+data.setCell(0, 2, 'SpiceJetTest.SignupPageTest')
+data.setCell(0, 3, 76548);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'SelectFlightAndPassengerInfoRoundTripTst')
 data.setCell(1, 2, 'SpiceJetTest.SelectFlightAndPassengerInfoRoundTripTest')
-data.setCell(1, 3, 45600);
+data.setCell(1, 3, 76182);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'SignupTest')
-data.setCell(2, 2, 'SpiceJetTest.SignupPageTest')
-data.setCell(2, 3, 27182);
+data.setCell(2, 1, 'SelectFlightAndPassengerInfoOneWayTripTt')
+data.setCell(2, 2, 'SpiceJetTest.SelectFlightAndPassengerInfoOneWayTripTest')
+data.setCell(2, 3, 36710);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'RoundTripTest1')
 data.setCell(3, 2, 'SpiceJetTest.RoundTripTest')
-data.setCell(3, 3, 22675);
+data.setCell(3, 3, 25877);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'OneWayTest')
 data.setCell(4, 2, 'SpiceJetTest.OneWayTripTest')
-data.setCell(4, 3, 20854);
+data.setCell(4, 3, 25378);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'LoginTest')
 data.setCell(5, 2, 'SpiceJetTest.LoginPageTest')
-data.setCell(5, 3, 14639);
+data.setCell(5, 3, 21618);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'LoginWithInvalidCredentialTst')
 data.setCell(6, 2, 'SpiceJetTest.LoginWithInvalidCredentialTest')
-data.setCell(6, 3, 6684);
+data.setCell(6, 3, 13264);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'ValidateBookingPageFieldsTst')
 data.setCell(7, 2, 'SpiceJetTest.ValidateBookingPageFieldsTest')
-data.setCell(7, 3, 3274);
+data.setCell(7, 3, 11606);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -461,172 +526,194 @@ return data;
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">SpiceJetTest.SignupPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">createTest(org.testng.TestRunner@7a682d35)</span>
+                <span class="method-start">1763 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">LanchBrowser(org.testng.TestRunner@6f012914, chrome)</span>
-                <span class="method-start">1439 ms</span>
+                <span class="method-name">LanchBrowser(chrome)</span>
+                <span class="method-start">1822 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">SignupTest</span>
-                <span class="method-start">30404 ms</span>
+                <span class="method-start">106607 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">createText(org.testng.TestRunner@6f012914)</span>
-                <span class="method-start">57593 ms</span>
+                <span class="method-name">checkStatus(public void SpiceJetTest.SignupPageTest.SignupTest() throws java.lang.Exception, [TestResult name=Si...)</span>
+                <span class="method-start">183422 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">57674 ms</span>
+                <span class="method-start">183519 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">SpiceJetTest.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">createTest(org.testng.TestRunner@64b70f41)</span>
+                <span class="method-start">195447 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">LanchBrowser(org.testng.TestRunner@250b236d, Edge)</span>
-                <span class="method-start">60806 ms</span>
+                <span class="method-name">LanchBrowser(Edge)</span>
+                <span class="method-start">195452 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">LoginTest</span>
-                <span class="method-start">102230 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">createText(org.testng.TestRunner@250b236d)</span>
-                <span class="method-start">116890 ms</span>
+                <span class="method-name">LoginTest</span>
+                <span class="method-start">294775 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">checkStatus(public void SpiceJetTest.LoginPageTest.LoginTest() throws java.lang.Exception, [TestResult name=Logi...)</span>
+                <span class="method-start">316436 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">116919 ms</span>
+                <span class="method-start">325937 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">SpiceJetTest.LoginWithInvalidCredentialTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">createTest(org.testng.TestRunner@5f8d9767)</span>
+                <span class="method-start">340476 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">LanchBrowser(org.testng.TestRunner@6a0ac48e, chrome)</span>
-                <span class="method-start">124864 ms</span>
+                <span class="method-name">LanchBrowser(chrome)</span>
+                <span class="method-start">340477 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginWithInvalidCredentialTst</span>
-                <span class="method-start">166308 ms</span>
+                <span class="method-start">450933 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">createText(org.testng.TestRunner@6a0ac48e)</span>
-                <span class="method-start">172998 ms</span>
+                <span class="method-name">checkStatus(public void SpiceJetTest.LoginWithInvalidCredentialTest.LoginWithInvalidCredentialTst() throws java....)</span>
+                <span class="method-start">464202 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">173050 ms</span>
+                <span class="method-start">464203 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">SpiceJetTest.OneWayTripTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">createTest(org.testng.TestRunner@16134476)</span>
+                <span class="method-start">467552 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">LanchBrowser(org.testng.TestRunner@499683c4, chrome)</span>
-                <span class="method-start">175633 ms</span>
+                <span class="method-name">LanchBrowser(chrome)</span>
+                <span class="method-start">467554 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">OneWayTest</span>
-                <span class="method-start">205494 ms</span>
+                <span class="method-start">511704 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">createText(org.testng.TestRunner@499683c4)</span>
-                <span class="method-start">226358 ms</span>
+                <span class="method-name">checkStatus(public void SpiceJetTest.OneWayTripTest.OneWayTest() throws java.lang.Exception, [TestResult name=On...)</span>
+                <span class="method-start">537086 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">226391 ms</span>
+                <span class="method-start">537100 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">SpiceJetTest.RoundTripTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">createTest(org.testng.TestRunner@62b09715)</span>
+                <span class="method-start">539911 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">LanchBrowser(org.testng.TestRunner@10bea4, chrome)</span>
-                <span class="method-start">229454 ms</span>
+                <span class="method-name">LanchBrowser(chrome)</span>
+                <span class="method-start">539913 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">RoundTripTest1</span>
-                <span class="method-start">256155 ms</span>
+                <span class="method-start">595477 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">createText(org.testng.TestRunner@10bea4)</span>
-                <span class="method-start">278843 ms</span>
+                <span class="method-name">checkStatus(public void SpiceJetTest.RoundTripTest.RoundTripTest1() throws java.lang.Exception, [TestResult name...)</span>
+                <span class="method-start">621360 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">278931 ms</span>
+                <span class="method-start">621362 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">SpiceJetTest.SelectFlightAndPassengerInfoOneWayTripTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">createTest(org.testng.TestRunner@3e214105)</span>
+                <span class="method-start">624851 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">LanchBrowser(org.testng.TestRunner@2b960a7, chrome)</span>
-                <span class="method-start">282642 ms</span>
+                <span class="method-name">LanchBrowser(chrome)</span>
+                <span class="method-start">624854 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">SelectFlightAndPassengerInfoOneWayTripTt</span>
-                <span class="method-start">312905 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">createText(org.testng.TestRunner@2b960a7)</span>
-                <span class="method-start">359858 ms</span>
+                <span class="method-name">SelectFlightAndPassengerInfoOneWayTripTt</span>
+                <span class="method-start">668545 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">checkStatus(public void SpiceJetTest.SelectFlightAndPassengerInfoOneWayTripTest.SelectFlightAndPassengerInfoOneW...)</span>
+                <span class="method-start">705372 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">359879 ms</span>
+                <span class="method-start">709613 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">SpiceJetTest.SelectFlightAndPassengerInfoRoundTripTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">createTest(org.testng.TestRunner@da4cf09)</span>
+                <span class="method-start">714072 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">LanchBrowser(org.testng.TestRunner@1e95b653, chrome)</span>
-                <span class="method-start">362194 ms</span>
+                <span class="method-name">LanchBrowser(chrome)</span>
+                <span class="method-start">714074 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">SelectFlightAndPassengerInfoRoundTripTst</span>
-                <span class="method-start">398241 ms</span>
+                <span class="method-start">762113 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">createText(org.testng.TestRunner@1e95b653)</span>
-                <span class="method-start">443843 ms</span>
+                <span class="method-name">checkStatus(public void SpiceJetTest.SelectFlightAndPassengerInfoRoundTripTest.SelectFlightAndPassengerInfoRound...)</span>
+                <span class="method-start">838298 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">443853 ms</span>
+                <span class="method-start">838301 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">SpiceJetTest.ValidateBookingPageFieldsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">createTest(org.testng.TestRunner@1980a3f)</span>
+                <span class="method-start">842481 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">LanchBrowser(org.testng.TestRunner@43471a7e, edge)</span>
-                <span class="method-start">446740 ms</span>
+                <span class="method-name">LanchBrowser(edge)</span>
+                <span class="method-start">842482 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">ValidateBookingPageFieldsTst</span>
-                <span class="method-start">490750 ms</span>
+                <span class="method-start">922457 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">createText(org.testng.TestRunner@43471a7e)</span>
-                <span class="method-start">494052 ms</span>
+                <span class="method-name">checkStatus(public void SpiceJetTest.ValidateBookingPageFieldsTest.ValidateBookingPageFieldsTst() throws java.la...)</span>
+                <span class="method-start">934067 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">494118 ms</span>
+                <span class="method-start">934069 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">GenerateExtentReports</span>
-                <span class="method-start">498310 ms</span>
+                <span class="method-start">947558 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

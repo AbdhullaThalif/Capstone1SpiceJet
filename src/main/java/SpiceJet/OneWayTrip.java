@@ -64,7 +64,7 @@ public class OneWayTrip extends Base1{
            public void DepartureDate() throws Exception {
         	   
 				// Click on the Departure Date
-				Thread.sleep(1000);
+        	   Thread.sleep(1000);
 				DT.click();
 			}
 			

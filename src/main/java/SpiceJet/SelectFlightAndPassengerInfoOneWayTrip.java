@@ -122,6 +122,7 @@ public class SelectFlightAndPassengerInfoOneWayTrip extends Base1 {
 	   Thread.sleep(1000);
 	   StdC.click();
 	// Click on the Continue Option
+	   Thread.sleep(1000);
 	   Continue.click();
   }
    
@@ -129,19 +130,21 @@ public class SelectFlightAndPassengerInfoOneWayTrip extends Base1 {
    
    
    
-   public void Confirmation()
-	{
+   public void Confirmation() throws Exception {
 		// Click on the Dialogue Option
+	   Thread.sleep(1000);
 		SRFTC1.click();
-		// Click on the continue button
+		// Click on the continue 
+		Thread.sleep(1000);
 		Continue1.click();
 			
 	}
 	
-	public void Continue()
+	public void Continue() throws Exception
 	
 	{
 		// Click on the continue button
+		Thread.sleep(1000);
 		ContinueC.click();
 	}
 	

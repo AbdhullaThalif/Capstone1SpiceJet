@@ -1,12 +1,14 @@
 package SpiceJetTest;
 
+
 import org.testng.annotations.Test;
 
 import base.Base1;
 import SpiceJet.LoginPage;
 
 public class LoginPageTest extends Base1{
-		
+	
+	
 		@Test
 		public void LoginTest() throws Exception {
 

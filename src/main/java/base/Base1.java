@@ -17,9 +17,9 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
@@ -30,8 +30,8 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 public class Base1 {
 	
 	public WebDriver driver;
-	public ExtentReports extentReports;
-	public ExtentTest extentTest;
+	public static ExtentReports extentReports;
+	public static ExtentTest extentTest;
 	
 	
 	@Parameters("choosebrowser")
@@ -56,10 +56,10 @@ public class Base1 {
 		  driver.get("https://www.spicejet.com/");
 	      }
 	
-	@BeforeTest
-	public void createText(ITestContext context) {
+	@BeforeClass
+	public void createTest(ITestContext Context) {
 		
-		extentTest = extentReports.createTest(context.getName());
+		extentTest = extentReports.createTest(Context.getName());
 		
 	}
 	

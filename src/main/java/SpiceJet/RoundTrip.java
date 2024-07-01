@@ -81,7 +81,7 @@ public class RoundTrip extends Base1{
             	   JavascriptExecutor executor = (JavascriptExecutor) driver;
             	   executor.executeScript("arguments[0].click();", DateRD);
 					// Click on the Departure Date
-					Thread.sleep(1000);
+            	   Thread.sleep(1000);
 					RD.click();
 				}
                
@@ -93,6 +93,7 @@ public class RoundTrip extends Base1{
                
                public void SearchFlight1() throws Exception {
 					// Click on the Students Option
+            	   Thread.sleep(1000);
 					SRFT.click();
 					Thread.sleep(1000);
 					// Click on the dialogue
